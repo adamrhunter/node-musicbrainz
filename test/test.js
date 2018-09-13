@@ -36,7 +36,7 @@ var testReleaseQuery = 'Elephant',
 	testLabelQuery = 'Warp',
 	testWorkQuery = 'XX';
 
-var testBadReleaseQuery = 'Uyguyg uiygu ygui',
+var testBadReleaseQuery = 'p2345ofp234 o234 p2wero234',
 	testBadReleaseGroupQuery = 'Ugb uhbu yvgg uyv',
 	testBadRecordingQuery = '0976087078',
 	testBadArtistQuery = 'OIouiyhi ughiug',
@@ -275,6 +275,7 @@ describe('mb', function() {
 		it('should return an empty array from a bad query', function (done) {
 			mb.searchReleases( testBadReleaseQuery, {}, function (err, result) {
 				if (err) { throw err; }
+
 				expect(result).to.be.instanceof(Array);
 				expect(result).to.be.empty;
 				done();
@@ -378,11 +379,10 @@ describe('mb', function() {
 
 		it('should return an array of a single recording from a valid query with 1 result', function(done) {
 			mb.searchRecordings( "\"Heart On\"", {
-				reid: "0bfb1ff1-a34f-4224-8e90-674aaaa8ad6a",
+				rid: "4ed49415-e064-449a-b355-46df59f6c262",
 			}, function (err, result) {
 				if (err) { throw err; }
 				expect(result).to.be.instanceof(Array);
-
 				expect(result.length).to.be.eql(1);
 				expect(result[0]).to.be.instanceof(Recording);
 				done();
