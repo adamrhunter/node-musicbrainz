@@ -43,15 +43,21 @@ var testBadReleaseQuery = 'p2345ofp234 o234 p2wero234',
 	testBadLabelQuery = 'OIjhkopk p;ko',
 	testBadWorkQuery = 'OIjhiouhguhuh uh u';
 
+// baseURI: 'http://34.238.122.4:5000/ws/2/',
+// baseURI: 'http://musicbrainz.org/ws/2/',
+// baseURI: 'http://18.234.216.238/ws/2/',
+
+
+const baseURI = 'http://34.238.122.4:5000/ws/2/';
 
 describe('mb', function() {
 
 	describe('#configure', function () {
 		it('shouldn\'t crash', function (done) {
 			mb.configure({
-				baseURI: 'http://musicbrainz.org/ws/2/',
+				baseURI,
 				rateLimit: {
-					requests: 2,
+					requests: 1000,
 					interval: 2000
 				}
 			});
