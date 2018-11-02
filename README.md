@@ -22,6 +22,11 @@ Supported resources
  - Release Group (artists, releases)
  - Work
 
+Added in this Fork
+-------------
+ - Browse, as per: https://wiki.musicbrainz.org/Development/XML_Web_Service/Version_2
+  - browse:   /<ENTITY>?<ENTITY>=<MBID>&limit=<LIMIT>&offset=<OFFSET>&inc=<INC>
+
 Lookup Examples
 ---------------
 
