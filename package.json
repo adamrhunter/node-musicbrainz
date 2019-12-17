@@ -11,7 +11,7 @@
     "tagging",
     "api"
   ],
-  "version": "0.2.8",
+  "version": "0.2.9",
   "homepage": "http://maxkueng.com/node-musicbrainz",
   "repository": {
     "type": "git",
