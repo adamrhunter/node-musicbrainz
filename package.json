@@ -11,7 +11,7 @@
     "tagging",
     "api"
   ],
-  "version": "0.2.9",
+  "version": "0.2.10",
   "homepage": "http://maxkueng.com/node-musicbrainz",
   "repository": {
     "type": "git",
@@ -27,7 +27,7 @@
     "lib": "./lib"
   },
   "dependencies": {
-    "request": "1.9.x",
+    "request": "2.88.x",
     "xml2js": "0.1.x",
     "timetrickle": "~0.1.1"
   },
